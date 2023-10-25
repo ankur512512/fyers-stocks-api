@@ -1,5 +1,5 @@
 from fyers_apiv3.FyersWebsocket import data_ws
-import os, sys
+import sys
 sys.path.append("login")
 from auto_login_totp import *
 
@@ -58,7 +58,7 @@ access_token = get_access_token()
 fyers = data_ws.FyersDataSocket(
     access_token=access_token,       # Access token in the format "appid:accesstoken"
     log_path="",                     # Path to save logs. Leave empty to auto-create logs in the current directory.
-    litemode=True,                  # Lite mode disabled. Set to True if you want a lite response.
+    litemode=False,                  # Lite mode disabled. Set to True if you want a lite response.
     write_to_file=False,              # Save response in a log file instead of printing it.
     reconnect=True,                  # Enable auto-reconnection to WebSocket on disconnection.
     on_connect=onopen,               # Callback function to subscribe to data upon connection.
