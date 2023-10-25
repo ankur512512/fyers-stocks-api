@@ -8,6 +8,11 @@ As of now, only login process and websocket streaming is implemented.
 ## Pre-requisites
 
 1. Python3 *(tested on 3.11.5, but should work on lower versions as well)*
+2. Ensure that virtual environments is installed.
+   
+   ```bash
+   apt-get install python3-venv
+   ```
 
 ## Usage
 
