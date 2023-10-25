@@ -1,0 +1,4 @@
+requests
+pyotp
+fyers_apiv3
+python-dotenv
